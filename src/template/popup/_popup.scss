@@ -1,0 +1,54 @@
+.mfp-inline-holder {
+	padding-top: 50px;
+	.mfp-content {
+		width: 70%;
+		background-color: #fff;
+		margin-bottom: 50px;
+		@media only screen and (max-width : 768px) {
+			width: 90%;
+		}
+		@media only screen and (max-width : 400px) {
+			width: 96%;
+		}
+		.white-popup-block {
+			padding: 15px 30px;
+			@media only screen and (max-width : 400px) {
+				padding: 15px;
+			}
+			h1 {
+				margin: 0;
+				margin-bottom: 30px;
+				color: #ff346b;
+				line-height: 24px;
+				small {
+					font-size: 14px;
+				}
+				@media only screen and (max-width : 768px) {
+					line-height: 30px;
+					font-size: 26px;
+				}
+				@media only screen and (max-width : 400px) {
+					font-size: 24px;
+				}
+			}
+			ul {
+				padding-left: 20px;
+				list-style-type: disc;
+				li {
+					margin-bottom: 15px;
+				}
+			}
+			p {
+				margin-bottom: 15px;
+				a {
+
+					color: #ff346b;
+				}
+				&:last-child {
+					margin-bottom: 0;
+					text-align: right;
+				}
+			}
+		}
+	}
+}

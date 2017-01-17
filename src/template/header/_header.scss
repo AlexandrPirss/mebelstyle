@@ -1,0 +1,11 @@
+.header {
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid #e5e5e5;
+	background-color: #fff;
+	@import "logo/_logo.scss";
+	@import "menu/_menu.scss";
+	@import "phone/_phone.scss";
+}

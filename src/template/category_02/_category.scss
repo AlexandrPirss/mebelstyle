@@ -1,0 +1,9 @@
+.category {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 100px 0px;
+	@import "title/_title.scss";
+	@import "menu/_menu.scss";
+	@import "content/_content.scss";
+}

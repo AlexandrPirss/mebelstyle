@@ -1,0 +1,93 @@
+/*
+* Third Party
+*/
+@import "../js/partials/HoverEffectIdeas/css/set1.css";
+@import "../../node_modules/magnific-popup/dist/magnific-popup.css";
+/*
+* Custom
+*/
+@import "_reset.scss";
+@import "_tabs.scss";
+@import "_grids.scss";
+@import "animate.css";
+
+// header scss
+@import "../template/header/_header.scss";
+// gallery-nav
+@import "../template/nav__gallery/_nav__gallery.scss";
+// about
+@import "../template/about/_about.scss";
+//blog
+@import "../template/blog/_blog.scss";
+//callback
+@import "../template/callback/_callback.scss";
+//footer
+@import "../template/footer/_footer.scss";
+//category
+@import "../template/category_01/_category.scss";
+@import "../template/category_02/_category.scss";
+@import "../template/category_03/_category.scss";
+@import "../template/category_04/_category.scss";
+@import "../template/category_05/_category.scss";
+@import "../template/category_06/_category.scss";
+//akciya
+@import "../template/action/_action.scss";
+//popup
+@import "../template/popup/_popup.scss";
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.hidden {
+	display: none;
+}
+.wrapper {
+	position: relative;
+}
+.right {
+	float: right;
+	@media only screen and (max-width : 768px) {
+		float: none;
+		margin: 0 auto;
+	}
+}
+.left {
+	float: left;
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.footer__mob__menu {
+		display: none;
+	}
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}

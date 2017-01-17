@@ -1,0 +1,26 @@
+&__content {
+	position: relative;
+	margin-top: 20px;
+	width: 100%;
+	height: 100%;
+	.category__item {
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 30px;
+		overflow: hidden;
+		cursor: crosshair;
+		&:hover .category__img {
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-o-transform: scale(1.05);
+		}
+		.category__img {
+			width: 100%;
+			height: 100%;
+			-moz-transition: all 0.5s ease-out;
+			-o-transition: all 0.5s ease-out;
+			-webkit-transition: all 0.5s ease-out;
+		}
+	}
+}

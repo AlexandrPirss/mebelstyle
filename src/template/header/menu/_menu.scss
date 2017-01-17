@@ -1,0 +1,39 @@
+.main__menu {
+	position: relative;
+	float: left;
+	margin-left: 55px;
+	margin-top: 20px;
+	@media screen and (max-width: 1200px) {
+		margin-left: 30px;
+	}
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
+	&__list {
+		position: relative;
+	}
+	&__item {
+		display: inline-block;
+		margin-left: 40px;
+		&:first-child {
+			margin-left: 0;
+		}
+		@media screen and (max-width: 1200px) {
+			margin-left: 20px;
+		}
+	}
+	&__link {
+		color: #303030;
+		font-weight: 400;
+		font-size: 14px;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		&:hover {
+			color: #ff346b;
+		}
+	}
+	.active {
+		color: #ff346b;
+	}
+}

@@ -1,0 +1,116 @@
+.blog {
+	position: relative;
+	margin-top: 100px;
+	width: 100%;
+	min-height: 500px;
+	&__link {
+		color: #000;
+		text-decoration: none;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		&:hover {
+			color: #ff346b;
+		}
+		&:hover .blog__item__img img {
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-o-transform: scale(1.1);
+		}
+	}
+	&__title {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		border-bottom: 1px solid #ff346b;
+		padding-bottom: 30px;
+		color: #ff346b;
+	}
+	&__item {
+		position: relative;
+		margin-top: 30px;
+		width: 100%;
+		height: 300px;
+		&__img {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 80%;
+			border-bottom: 5px solid #ff346b;
+			img {
+				width: 100%;
+				height: 100%;
+				-moz-transition: all 0.5s ease-out;
+				-o-transition: all 0.5s ease-out;
+				-webkit-transition: all 0.5s ease-out;
+			}
+		}
+		&__content {
+			position: relative;
+			width: 100%;
+			height: 20%;
+			.date {
+				float: left;
+				width: 10%;
+				height: 100%;
+				@media only screen and (max-width : 400px) {
+					width: 20%;
+				}
+				&__number {
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 60%;
+					text-align: center;
+					font-size: 20px;
+					font-weight: 600;
+					color: #fff;
+					line-height: 40px;
+					background-color: #ff346b;
+				}
+				&__month {
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 40%;
+					text-transform: uppercase;
+					font-size: 16px;
+					font-weight: 600;
+					color: #000;
+					letter-spacing: 3px;
+					text-align: center;
+					@media only screen and (max-width : 768px) {
+						font-size: 14px;
+					}
+				}
+			}
+			.info {
+				float: right;
+				width: 90%;
+				height: 100%;
+				padding-left: 20px;
+				@media only screen and (max-width : 400px) {
+					width: 80%;
+				}
+				&__title {
+					position: relative;
+					display: block;
+					width: 100%;
+					font-size: 18px;
+					line-height: 24px;
+				}
+				&__text {
+					position: relative;
+					display: block;
+					width: 100%;
+					margin-top: 5px;
+					font-size: 14px;
+					line-height: 16px;
+					@media only screen and (max-width : 400px) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

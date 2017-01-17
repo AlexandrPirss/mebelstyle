@@ -1,0 +1,46 @@
+.phone {
+	float: right;
+	margin-top: 14px;
+	@media only screen and (max-width : 768px) {
+		margin-right: 15px;
+	}
+	.tabs__controls {
+		float: right;
+		&-item {
+			width: 34px;
+			height: 34px;
+			background-color: #222;
+			text-align: center;
+			line-height: 34px;
+			margin-left: 0;
+			&:first-child {
+				margin-left: 0;
+			}
+			.tabs__control-link {
+				text-decoration: none;
+				color: #fff;
+				font-weight: 400;
+				font-size: 12px;
+				-webkit-transition: all .3s ease;
+				-moz-transition: all .3s ease;
+				-o-transition: all .3s ease;
+				&:hover {
+					color: #ff346b;
+				}
+			}
+		}
+	}
+	.tabs__list  {
+		float: left;
+		padding-right: 10px;
+		@media only screen and (max-width : 768px) {
+			padding-right: 5px;
+		}
+		.tabs__item-link {
+			color: #000;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 38px;
+		}
+	}
+}
